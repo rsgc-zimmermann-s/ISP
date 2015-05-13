@@ -4,12 +4,17 @@ class Donut {
 
   int y = 0; //Vertical position
 
+  int colour = 0;
+
   float diameter = 0; //sets size of ellipse
 
   int expansionRate = 1; //sets rate of expansion
 
-  //Constructor  
+
+    //Constructor  
   Donut(int xPassed, int yPassed, int expansionRatePassed) {
+
+    colour = int(random(361));
 
     y = yPassed;
     x = xPassed;
@@ -20,7 +25,7 @@ class Donut {
   //Responsible for drawing the ellipse
   float update(float currentAmplitude) {
 
-    fill(172, 100, 100);
+
     noStroke();
 
     //drawing ellipse
